@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="/script/script_home.js" defer></script>
+    <link rel="stylesheet" href="/css/home.css">
+
+    {{!-- Icon Bank --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    {{!-- Icon create user --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{!-- Icon ping --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+    {{!-- Icon add user --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{!-- Icon carteira --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+    {{!-- Icon moedas --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{!-- Icon money symbol --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{!-- icon pacote de dinheiro --}}
+    <link rel='stylesheet'
+        href='httclsps://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    {{!-- Icon transferir dinheiro --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+    {{!-- Icon sair --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+    {{!-- Icon touch --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+</head>
+
+
+<body>
+    {{!-- <header>Header</header> --}}
+
+
+
+    <main>
+        <section id="container-text">
+            <div class="text">
+
+                {{!-- Icon bank --}}
+                <i class="fi fi-rr-bank"></i>
+
+                <h3>Seja bem vindo(a) ao nosso banco!</h3>
+
+                <p>É um prazer recebê-lo aqui...</p>
+
+                <p>Esperamos que você tenha uma ótima experiência ao utilizar
+                    o nosso sistema bancário.<br><br> Sinta-se a vontade para abrir sua conta conosco!</p>
+
+                <p>Aqui, garantimos a segurança de sua conta! Então, pode ficar despreocupado.</p>
+
+                <p>Nossa equipe está preparada para prestar todo<br> apoio necessário caso precise.</p>
+            </div>
+
+            <div id="flags">
+                    {{!-- Circle 01 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle01"></div>
+                    </div>
+                    {{!-- Circle 02 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle02"></div>
+                    </div>
+                    {{!-- Circle 03 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle03"></div>
+                    </div>
+                    {{!-- Circle 04 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle04"></div>
+                    </div>
+                    {{!-- Circle 05 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle05"></div>
+                    </div>
+                </div>
+            </article>
+
+
+        </section>
+
+
+        <section id="container-operations">
+            <article id="title-phone">
+                <h4>Área do usuário</h4>
+                {{!-- Icon touch --}}
+                <i class="fi fi-sr-choose"></i>
+            </article>
+
+            <div id="container-phone">
+                <section id="display-phone">
+                    <div id="operations">
+
+                        <div id="icon-title-operations">
+                            <i class="fi fi-sr-badge-dollar"></i>
+                        </div>
+
+                        <a href="/cadaster" class="option" id="optionCreateAccount">
+                            <p>Cadastrar conta</p>
+                            {{!-- Icon criar usuário --}}
+                            <i class="fi fi-sr-user-add"></i>
+                        </a>
+
+                        <a href="/login" class="option" id="optionLogin">
+                            <p>Acessar conta</p>
+                            {{!-- Icon sair --}}
+                            <i class="fi fi-ss-address-card"></i>
+                        </a>
+
+
+                        <a href="/balance" class="option" id="optionCheckBalance">
+                            <p>Consultar saldo</p>
+                            {{!-- Icon carteira --}}
+                            <i class="fi fi-ss-wallet"></i>
+                        </a>
+
+                        <a href="/withdraw" class="option" id="optionWithdraw">
+                            <p>Saque</p>
+                            {{!-- Icon pacote de dinheiro --}}
+                            <i class="fi fi-sr-sack-dollar"></i>
+                        </a>
+
+                        <a href="/transfer" class="option" id="optionTransfer">
+                            <p>Transferência</p>
+                            {{!-- Icon transferencia --}}
+                            <i class="fi fi-ss-expense"></i>
+                        </a>
+                    <p id="tag-copy-right">&copy;nicolas_code</p>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

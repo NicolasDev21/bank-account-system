@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-blue: rgb(3, 3, 87);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#header{
+    background-color: var(--bg-blue);
+    border-bottom: 6px solid orange;
+    color: white;
+    width: 50%;
+    height: 7%;
+    border-radius: 0 10px 10px 0;
+
+    box-shadow: -20px 15px 20px 5px rgba(0, 0, 0, 0.434) ;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+#header i{
+    margin-left: 1rem;
+    font-size: 25px;
+    color: orange;
+}
+
+#header ul{
+    margin-right: 2rem;
+    width: 35%;
+    height: 90%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+} 
+
+#header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header ul li a:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#icon-arrow-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    height: 80%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-form, #container-content{
+    width: 50%;
+    height: 100%;
+}
+
+#container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: #fff;
+    width: 97%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--bg-blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title-form{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--bg-blue);
+
+    width: auto;
+    height: 5%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+    padding: 0 1rem;
+}
+#title-form h3{
+    margin-left: 1rem;
+}
+#title-form i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-blue);
+}
+
+#container-inputs{
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form .class-input-form{
+    background-color: beige;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.322);
+    color: var(--bg-blue);
+    width: 50%;
+    height: 4rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-bottom: 3px solid var(--bg-blue);
+    border-right: 3px solid var(--bg-blue);
+}
+.class-input-form label span{
+    color: red;
+}
+.class-input-form label{
+    font-weight: bold;
+}
+
+
+
+#container-icon-bank-selected{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+
+#img-bank-selected{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+}
+
+#container-btn{
+    width: 51%;
+    height: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* Texto informativo */
+#info{
+    font-style: italic;
+    color: red;
+}
+
+.button{
+    width: auto;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+.button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.button[type="submit"]{
+    background-color: yellowgreen;
+}
+.button[type="reset"]{
+    background-color: orangered;
+}
+
+
+#container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#container-text, #container-banner{
+
+    width: 98%;
+    height: 100%;
+}
+
+#container-text{
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-text h1{
+    font-size: 30px;
+    color: var(--bg-blue);
+}
+
+#flags{
+    margin-top: 2rem;
+    width: 65%;
+    height: 5rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(3, 3, 87, 0.379);
+}
+
+#flags .circle-external{
+    background: linear-gradient(to bottom right, var(--bg-blue), rgb(66, 66, 236));
+    border-radius: 100%;
+    
+    width: 14%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-external .circle-internal{
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.443);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#circle01{
+    background-image: url(../images/banco-do-brasil.jpg);
+}
+#circle02{
+    background-image: url(../images/santander.jpg);
+}
+#circle03{
+    background-image: url(../images/itau.jpg);
+}
+#circle04{
+    background-image: url(../images/caixa-economica.jpg);
+}
+#circle05{
+    background-image: url(../images/bradesco.jpg);
+}
+
+
+
+
+#container-banner{
+    background-color: #edb637;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner1, #banner2{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+#banner1{
+    background-image: url(../images/banner-cadaster.jpg);
+    background-size: 119%;
+}
+#banner2{
+    background-image: url(../images/photo-banner2.jpg);
+}
+#banner2 img{
+    width: 9.5rem;
+    height: 20rem;
+
+    margin-left: -5rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+
+
+
+/* Responsividade mobile */
+@media (min-width: 320px) and (max-width: 767px){
+    #container-content{
+        display: none;
+    }
+    #header{
+        width: 95%;
+    }
+    #header i{
+        font-size: 25px;
+    }
+    #header h3{
+        font-size: 16px;
+        display: none;
+    }
+    #header ul{
+        width: auto;
+        margin-right: 1rem;
+    }
+    #title-form{
+        margin-top: -1rem;
+    }
+    #container-form{
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+    }
+    
+    #container-inputs .class-input-form{
+        width: 90%;
+        height: 2.5rem;
+    }
+    .class-input-form input[type="text"], input[type="number"]{
+        text-align: center;
+        height: 1.3rem;
+        border-radius: 5px;
+    }
+    #container-btn{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    #info{
+        font-size: 13px;
+        width: auto;
+    }
+}

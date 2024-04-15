@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/cadaster.css">
+
+    {{!-- Icon Bank --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    {{!-- Icon Arrow right --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    {{!-- Icon create user --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+        {{!-- Icon close --}}
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <i class="fi fi-rr-bank"></i>
+            <h3>My Bank Account</h3>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Acessar conta <i id="icon-arrow-right" class="fi fi-rr-angle-small-right"></i></a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="container-form">
+            <form action="/cadaster" method="POST">
+
+                <div id="title-form">
+                    <h3>Cadastrar conta bancária</h3>
+                    {{!-- Icon criar usuário --}}
+                    <i class="fi fi-sr-user-add"></i>
+                </div>
+
+                {{!-- Name  --}}
+                <article id="container-inputs">
+                    <div class="class-input-form">
+                        <label for="name"><span>*</span> Nome do títular:</label>
+
+                        <input type="text" name="name" placeholder="Digite o nome do títular">
+                    </div>
+
+                    {{!-- Type account --}}
+                    <div class="class-input-form" id="input-type-acc">
+                        <label for="type-account"><span>*</span> Tipo de conta:</label>
+
+                        <input type="radio" name="typeAccount" id="savings-acc">Conta poupança<input type="radio" name="typeAccount" id="current-acc">Conta corrente
+                    </div>
+
+                    {{!-- Select bank --}}
+                    <div class="class-input-form" id="input-selected-bank">
+                        <label for="selectBank"><span>*</span> Selecione seu banco:</label>
+
+                        <select name="selectBank" id="selectBank">
+                            <option value="bancoDoBrasil">
+                                Banco do Brasil
+                            </option>
+
+                            <option value="santander">
+                                Santander
+                            </option>
+
+                            <option value="itau">
+                                Itaú
+                            </option>
+
+                            <option value="bradesco">
+                                Bradesco
+                            </option>
+
+                            <option value="caixaEconomica">
+                                Caixa Econômica
+                            </option>
+                        </select>
+
+                        <div id="container-icon-bank-selected">
+                            <img id="img-bank-selected" src="images/banco-do-brasil.jpg" alt="image bank account">
+                        </div>
+                    </div>
+
+                    <div class="class-input-form">
+                        <label for="cpf"><span>*</span> CPF/ CNPJ:</label>
+
+                        <input type="number" name="cpf" placeholder="Informe o seu cpf ou cnpj" maxlength="14">
+                    </div>
+                    
+                    <div class="class-input-form">
+                        <label for="agency"><span>*</span> Agencia:</label>
+
+                        <input type="number" name="agency" maxlength="6" placeholder="Digite o sua agência">
+                    </div>
+
+                    <div class="class-input-form">
+                        <label for="numberAccount"><span>*</span> Nº da conta:</label>
+
+                        <input type="number" name="numberAccount" maxlength="10" placeholder="Digite o número da conta">
+                    </div>
+
+
+                    <div id="container-btn">
+                        <p id="info">* Por favor, preencha todos os campos obrigatórios! *</p>
+
+                        <input class="button" type="reset" value="Cancelar">
+                        <input class="button" type="submit" value="Cadastrar">
+                    </div>
+                </article>
+
+            </form>
+        </section>
+
+
+
+
+        <section id="container-content">
+            <article id="container-text">
+                <h1>Agradeçemos por escolher nosso banco!</h1>
+                <h3>Garantimos a segurança e proteção de seus dados.</h3>
+
+                <div id="flags">
+
+                    {{!-- Circle 01 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle01"></div>
+                    </div>
+                    {{!-- Circle 02 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle02"></div>
+                    </div>
+                    {{!-- Circle 03 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle03"></div>
+                    </div>
+                    {{!-- Circle 04 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle04"></div>
+                    </div>
+                    {{!-- Circle 05 --}}
+                    <div class="circle-external">
+                        <div class="circle-internal" id="circle05"></div>
+                    </div>
+                </div>
+            </article>
+
+
+
+            <article id="container-banner">
+                <div id="banner1"></div>
+                <div id="banner2">
+                    <img src="/images/print-phone.png" alt="image phone">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>.</footer>
+
+</body>
+
+</html>
