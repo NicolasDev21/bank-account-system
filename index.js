@@ -33,6 +33,7 @@ server.get('/', (req,res) => {
 // Rota de cadastro:
 server.get('/cadaster',(req,res) => {
 
+
     res.render('cadaster');
 });
 server.post('/cadaster', (req, res) => {
@@ -60,6 +61,13 @@ server.post('/cadaster', (req, res) => {
     console.log(bankAccount);
     
     res.render('cadaster');
+})
+
+
+// Rota de login:
+server.get('/login', (req, res) => {
+    
+    res.render('login');
 })
 
 
