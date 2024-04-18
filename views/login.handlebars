@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{!-- Icon user --}}
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{!-- Icon locker --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{!-- Icon user login --}}
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    {{!-- Icon eye disable --}}
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
@@ -27,7 +39,36 @@
                         <i class="fi fi-sr-circle-user"></i>
                     </header>
 
-                    <form id="form-login" action="/login" method="post">.</form>
+                    <form id="form-login" action="/login" method="post">
+
+                        <div id="div-username">
+                            {{!-- Icon user login --}}
+                            <label for="username"><i class="fi fi-sr-user"></i></label>
+                            <input type="text" name="username" placeholder="Insira seu login">
+                        </div>
+
+                        <div id="container-pass">
+                            <article id="div-password">
+                                {{!-- Icon locker for label --}}
+                                <label for="password"><i class="fi fi-sr-lock"></i></label>
+
+                                <input type="password" name="password" placeholder="Insira seu senha">
+
+                                {{!-- Icon eye disable --}}
+                                <i id="icon-view-pass" class="fi fi-rr-eye-crossed"></i>
+                            </article>
+                        </div>
+
+                        <div id="container-change-pass">
+                            <a href="#">I forgot my password!</a>
+                        </div>
+
+                        <div id="container-btn">
+                            <input class="btn" type="reset" value="Cancelar">
+                            <input class="btn" type="submit" value="Logar">
+                        </div>
+
+                    </form>
                 </article>
 
 
@@ -56,4 +97,5 @@
 
 
 </body>
+
 </html>
