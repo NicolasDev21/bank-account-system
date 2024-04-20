@@ -15,7 +15,7 @@
 
     {{!-- Icon user login --}}
     <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     {{!-- Icon eye disable --}}
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -26,74 +26,56 @@
 
 <body>
     <main>
-        <section id="container-content"></section>
+        <section id="container-content">
+            <header id="header-content">
+                Área de login do usuário
+            </header>
 
-
-
-        <section id="container-form">
-            <div id="cards">
-                {{!-- form login --}}
-                <article id="container-login">
-                    <header id="header-login">
-                        <h2>Login</h2>
-                        <i class="fi fi-sr-circle-user"></i>
-                    </header>
-
-                    <form id="form-login" action="/login" method="post">
-
-                        <div id="div-username">
-                            {{!-- Icon user login --}}
-                            <label for="username"><i class="fi fi-sr-user"></i></label>
-                            <input type="text" name="username" placeholder="Insira seu login">
-                        </div>
-
-                        <div id="container-pass">
-                            <article id="div-password">
-                                {{!-- Icon locker for label --}}
-                                <label for="password"><i class="fi fi-sr-lock"></i></label>
-
-                                <input type="password" name="password" placeholder="Insira seu senha">
-
-                                {{!-- Icon eye disable --}}
-                                <i id="icon-view-pass" class="fi fi-rr-eye-crossed"></i>
-                            </article>
-                        </div>
-
-                        <div id="container-change-pass">
-                            <a href="#">I forgot my password!</a>
-                        </div>
-
-                        <div id="container-btn">
-                            <input class="btn" type="reset" value="Cancelar">
-                            <input class="btn" type="submit" value="Logar">
-                        </div>
-
-                    </form>
-                </article>
-
-
-                {{!-- form cadaster --}}
-                <article id="container-cadaster">.</article>
-            </div>
-
-            <p id="info">*Por favor, preencha todos os campos obrigatórios!*</p>
+            <article id="content">.</article>
+            <footer>
+                <p>Created by ~ &copy;nicolas_code</p>
+            </footer>
         </section>
 
 
 
 
+        <section id="container-form">
+            <header id="header-form">
+                <i class="fi fi-rr-circle-user"></i>
+                <p id="info">* Por favor, preencha todos os campos obrigatórios! *</p>
+            </header>
 
+            <form class="form" id="form-login" action="/login" method="POST">
+                <article class="div-input">
+                    <p id="label-username">Username:</p>
+                    <input type="text" name="username" placeholder="Digite seu nome de usuário">
+                </article>
+
+                <article class="div-input">
+                    <p id="label-password">Password:</p>
+
+                    <div class="container-password">
+                        <input type="password" name="password" placeholder="Digite sua senha">
+
+                        {{!-- Icon eye disble --}}
+                        <i class="fi fi-rr-eye-crossed"></i>
+                    </div>
+                </article>
+
+                <article id="container-interaction">
+                    <a href="#" id="link-forgot-password">I forgot my password!</a>
+
+                    <div id="container-btn">
+                        <input class="btn" type="reset" value="Cancelar">
+                        <input class="btn" type="submit" value="Logar">
+                    </div>
+                </article>
+            </form>
+
+
+        </section>
     </main>
-
-
-
-
-
-    <footer>
-        <p>&copy;nicolas_code</p>
-    </footer>
-
-
 
 
 </body>
